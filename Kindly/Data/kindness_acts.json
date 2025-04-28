@@ -1,0 +1,124 @@
+{
+  "acts": [
+    {
+      "id": "1",
+      "title": "Leave a kind note for someone",
+      "description": "Write a thoughtful note and leave it where someone will find it.",
+      "isCustom": false
+    },
+    {
+      "id": "2",
+      "title": "Pay for the person behind you in line",
+      "description": "At a coffee shop or drive-through, pay for the order of the person behind you.",
+      "isCustom": false
+    },
+    {
+      "id": "3",
+      "title": "Compliment a stranger",
+      "description": "Give a genuine compliment to someone you don't know.",
+      "isCustom": false
+    },
+    {
+      "id": "4",
+      "title": "Send a thank you text",
+      "description": "Text someone who has helped you recently just to say thanks.",
+      "isCustom": false
+    },
+    {
+      "id": "5",
+      "title": "Pick up litter",
+      "description": "Collect and properly dispose of litter you find while out walking.",
+      "isCustom": false
+    },
+    {
+      "id": "6",
+      "title": "Donate unused items",
+      "description": "Gather clothes or items you no longer use and donate them.",
+      "isCustom": false
+    },
+    {
+      "id": "7",
+      "title": "Help carry groceries",
+      "description": "Offer to help someone carry their groceries to their car or home.",
+      "isCustom": false
+    },
+    {
+      "id": "8",
+      "title": "Let someone go ahead of you",
+      "description": "Let someone with fewer items go ahead of you in line.",
+      "isCustom": false
+    },
+    {
+      "id": "9",
+      "title": "Share your umbrella",
+      "description": "If it's raining, share your umbrella with someone who doesn't have one.",
+      "isCustom": false
+    },
+    {
+      "id": "10",
+      "title": "Hold the door open",
+      "description": "Take an extra moment to hold the door for someone behind you.",
+      "isCustom": false
+    },
+    {
+      "id": "11",
+      "title": "Send a care package",
+      "description": "Mail a small package of treats or necessities to someone who could use a pick-me-up.",
+      "isCustom": false
+    },
+    {
+      "id": "12",
+      "title": "Water a neighbor's plants",
+      "description": "Offer to water a neighbor's garden or plants while they're away.",
+      "isCustom": false
+    },
+    {
+      "id": "13",
+      "title": "Give up your seat",
+      "description": "Offer your seat on public transportation to someone who needs it more.",
+      "isCustom": false
+    },
+    {
+      "id": "14",
+      "title": "Leave a generous tip",
+      "description": "Give an extra generous tip to a service worker today.",
+      "isCustom": false
+    },
+    {
+      "id": "15",
+      "title": "Call an old friend",
+      "description": "Reach out to a friend you haven't spoken to in a while just to check in.",
+      "isCustom": false
+    },
+    {
+      "id": "16",
+      "title": "Read to someone",
+      "description": "Offer to read to a child, elderly person, or someone with visual impairment.",
+      "isCustom": false
+    },
+    {
+      "id": "17",
+      "title": "Bake for a neighbor",
+      "description": "Bake cookies or bread and share with a neighbor.",
+      "isCustom": false
+    },
+    {
+      "id": "18",
+      "title": "Send a supportive message",
+      "description": "Reach out to someone going through a hard time with words of encouragement.",
+      "isCustom": false
+    },
+    {
+      "id": "19",
+      "title": "Return a shopping cart",
+      "description": "Return your cart and one that was left in the parking lot.",
+      "isCustom": false
+    },
+    {
+      "id": "20",
+      "title": "Share your knowledge",
+      "description": "Teach someone a skill you have that might help them.",
+      "isCustom": false
+    }
+  ]
+} 

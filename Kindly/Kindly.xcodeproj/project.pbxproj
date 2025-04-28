@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		/* Main App Files */
+		2A1234561234567800000001 /* KindlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000002 /* KindlyApp.swift */; };
+		2A1234561234567800000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000004 /* ContentView.swift */; };
+		2A1234561234567800000005 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000006 /* HomeView.swift */; };
+		2A1234561234567800000007 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000008 /* CalendarView.swift */; };
+		2A1234561234567800000009 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000010 /* SettingsView.swift */; };
+		2A1234561234567800000011 /* AddCustomActView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000012 /* AddCustomActView.swift */; };
+		2A1234561234567800000013 /* KindnessAct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000014 /* KindnessAct.swift */; };
+		2A1234561234567800000015 /* KindnessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000016 /* KindnessService.swift */; };
+		2A1234561234567800000017 /* StreakTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000018 /* StreakTracker.swift */; };
+		2A1234561234567800000019 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000020 /* NotificationManager.swift */; };
+		2A1234561234567800000021 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000022 /* Extensions.swift */; };
+		2A1234561234567800000023 /* kindness_acts.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000024 /* kindness_acts.json */; };
+		2A1234561234567800000025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000026 /* Assets.xcassets */; };
+		2A123456123456781000001 /* KindlyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000042 /* KindlyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		
+		/* Widget Files */
+		2A1234561234567800000029 /* KindlyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000030 /* KindlyWidget.swift */; };
+		2A1234561234567800000031 /* KindnessAct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000014 /* KindnessAct.swift */; };
+		2A1234561234567800000033 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000022 /* Extensions.swift */; };
+		2A1234561234567800000037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1234561234567800000026 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A1234561234567800000038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A1234561234567800000039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1234561234567800000040;
+			remoteInfo = KindlyWidgetExtension;
+		};
+		2A1234561234567800000069 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A1234561234567800000039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A1234561234567800000040;
+			remoteInfo = KindlyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2A1234561234567800000002 /* KindlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlyApp.swift; sourceTree = "<group>"; };
+		2A1234561234567800000004 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2A1234561234567800000006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2A1234561234567800000008 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		2A1234561234567800000010 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A1234561234567800000012 /* AddCustomActView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomActView.swift; sourceTree = "<group>"; };
+		2A1234561234567800000014 /* KindnessAct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindnessAct.swift; sourceTree = "<group>"; };
+		2A1234561234567800000016 /* KindnessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindnessService.swift; sourceTree = "<group>"; };
+		2A1234561234567800000018 /* StreakTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakTracker.swift; sourceTree = "<group>"; };
+		2A1234561234567800000020 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		2A1234561234567800000022 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2A1234561234567800000024 /* kindness_acts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kindness_acts.json; sourceTree = "<group>"; };
+		2A1234561234567800000026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A1234561234567800000028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A1234561234567800000030 /* KindlyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindlyWidget.swift; sourceTree = "<group>"; };
+		2A1234561234567800000073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FBEE322DBFCB150057891C /* Kindly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FBEE662DBFD0D50057891C /* Kindly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kindly.xcodeproj; sourceTree = "<group>"; };
+		2A1234561234567800000042 /* KindlyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KindlyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		2A1234561234567800000043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18FBEE322DBFCB150057891C /* Kindly.app */,
+				2A1234561234567800000042 /* KindlyWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000044 /* Kindly */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000002 /* KindlyApp.swift */,
+				2A1234561234567800000045 /* Views */,
+				2A1234561234567800000046 /* Models */,
+				2A1234561234567800000047 /* Services */,
+				2A1234561234567800000048 /* Utilities */,
+				2A1234561234567800000049 /* Data */,
+				2A1234561234567800000050 /* Widgets */,
+				2A1234561234567800000026 /* Assets.xcassets */,
+				2A1234561234567800000071 /* KindlyWidget */,
+				2A1234561234567800000072 /* Kindly */,
+			);
+			path = Kindly;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000045 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000004 /* ContentView.swift */,
+				2A1234561234567800000006 /* HomeView.swift */,
+				2A1234561234567800000008 /* CalendarView.swift */,
+				2A1234561234567800000010 /* SettingsView.swift */,
+				2A1234561234567800000012 /* AddCustomActView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000046 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000014 /* KindnessAct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000047 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000016 /* KindnessService.swift */,
+				2A1234561234567800000018 /* StreakTracker.swift */,
+				2A1234561234567800000020 /* NotificationManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000048 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000022 /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000049 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000024 /* kindness_acts.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000050 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000030 /* KindlyWidget.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000071 /* KindlyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000073 /* Info.plist */,
+			);
+			path = KindlyWidget;
+			sourceTree = "<group>";
+		};
+		2A1234561234567800000072 /* Kindly */ = {
+			isa = PBXGroup;
+			children = (
+				2A1234561234567800000028 /* Info.plist */,
+			);
+			path = Kindly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A1234561234567800000051 /* Kindly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1234561234567800000052 /* Build configuration list for PBXNativeTarget "Kindly" */;
+			buildPhases = (
+				2A1234561234567800000053 /* Sources */,
+				2A1234561234567800000054 /* Frameworks */,
+				2A1234561234567800000055 /* Resources */,
+				2A1234561234567800000056 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A1234561234567800000057 /* PBXTargetDependency */,
+			);
+			name = Kindly;
+			productName = Kindly;
+			productReference = 18FBEE322DBFCB150057891C /* Kindly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A1234561234567800000040 /* KindlyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A1234561234567800000058 /* Build configuration list for PBXNativeTarget "KindlyWidgetExtension" */;
+			buildPhases = (
+				2A1234561234567800000059 /* Sources */,
+				2A1234561234567800000060 /* Frameworks */,
+				2A1234561234567800000061 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KindlyWidgetExtension;
+			productName = KindlyWidgetExtension;
+			productReference = 2A1234561234567800000042 /* KindlyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A1234561234567800000039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					2A1234561234567800000051 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					2A1234561234567800000040 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 2A1234561234567800000062 /* Build configuration list for PBXProject "Kindly" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A1234561234567800000044;
+			productRefGroup = 2A1234561234567800000043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A1234561234567800000051 /* Kindly */,
+				2A1234561234567800000040 /* KindlyWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A1234561234567800000055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1234561234567800000025 /* Assets.xcassets in Resources */,
+				2A1234561234567800000023 /* kindness_acts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1234561234567800000061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1234561234567800000037 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A1234561234567800000053 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1234561234567800000001 /* KindlyApp.swift in Sources */,
+				2A1234561234567800000003 /* ContentView.swift in Sources */,
+				2A1234561234567800000005 /* HomeView.swift in Sources */,
+				2A1234561234567800000007 /* CalendarView.swift in Sources */,
+				2A1234561234567800000009 /* SettingsView.swift in Sources */,
+				2A1234561234567800000011 /* AddCustomActView.swift in Sources */,
+				2A1234561234567800000013 /* KindnessAct.swift in Sources */,
+				2A1234561234567800000015 /* KindnessService.swift in Sources */,
+				2A1234561234567800000017 /* StreakTracker.swift in Sources */,
+				2A1234561234567800000019 /* NotificationManager.swift in Sources */,
+				2A1234561234567800000021 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1234561234567800000059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A1234561234567800000029 /* KindlyWidget.swift in Sources */,
+				2A1234561234567800000031 /* KindnessAct.swift in Sources */,
+				2A1234561234567800000033 /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A1234561234567800000057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A1234561234567800000040 /* KindlyWidgetExtension */;
+			targetProxy = 2A1234561234567800000038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2A1234561234567800000063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GENERATE_INFOPLIST_FILE = YES;
+			};
+			name = Debug;
+		};
+		2A1234561234567800000064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+			};
+			name = Release;
+		};
+		2A1234561234567800000065 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kindly/Kindly.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Aatif. All rights reserved.";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kindly";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aatif.Kindly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A1234561234567800000066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Kindly/Kindly.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2024 Aatif. All rights reserved.";
+				INFOPLIST_KEY_CFBundleDisplayName = "Kindly";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aatif.Kindly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2A1234561234567800000067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Kindly/KindlyWidget/KindlyWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KindlyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aatif.Kindly.KindlyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A1234561234567800000068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Kindly/KindlyWidget/KindlyWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = KindlyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSExtension_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aatif.Kindly.KindlyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A1234561234567800000052 /* Build configuration list for PBXNativeTarget "Kindly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1234561234567800000065 /* Debug */,
+				2A1234561234567800000066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1234561234567800000058 /* Build configuration list for PBXNativeTarget "KindlyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1234561234567800000067 /* Debug */,
+				2A1234561234567800000068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A1234561234567800000062 /* Build configuration list for PBXProject "Kindly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A1234561234567800000063 /* Debug */,
+				2A1234561234567800000064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A1234561234567800000056 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2A123456123456781000001 /* KindlyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+	};
+	rootObject = 2A1234561234567800000039 /* Project object */;
+} 
