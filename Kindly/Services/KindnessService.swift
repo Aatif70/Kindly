@@ -134,7 +134,7 @@ class KindnessService: ObservableObject {
     }
     
     // Select a new random act for today if needed
-    private func checkAndUpdateTodaysAct() {
+    func checkAndUpdateTodaysAct() {
         let today = calendar.startOfDay(for: Date())
         let todayString = dateToString(today)
         
