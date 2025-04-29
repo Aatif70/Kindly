@@ -5,6 +5,8 @@ struct HomeView: View {
     @EnvironmentObject var streakTracker: StreakTracker
     @State private var showingAddActSheet = false
     @State private var showingCompletionAnimation = false
+    @State private var showingReflectionSheet = false
+    @State private var userReflection = ""
     @State private var isLoaded = false
     
     var body: some View {
@@ -34,7 +36,9 @@ struct HomeView: View {
                     
                     VStack(spacing: 18) {
                         Button(action: {
-                            completeAct()
+                            if !kindnessService.isActCompletedToday {
+                                showingReflectionSheet = true
+                            }
                         }) {
                             Text(kindnessService.isActCompletedToday ? "Completed" : "Mark as Done")
                                 .kindlyButtonStyle(
@@ -46,6 +50,11 @@ struct HomeView: View {
                         .disabled(kindnessService.isActCompletedToday)
                         .scaleEffect(kindnessService.isActCompletedToday ? 1.0 : 1.0)
                         .animation(.kindlyBounce, value: kindnessService.isActCompletedToday)
+                        .sheet(isPresented: $showingReflectionSheet) {
+                            ReflectionSheetView(reflection: $userReflection, onSave: {
+                                completeAct()
+                            })
+                        }
                         
                         Button(action: {
                             showingAddActSheet = true
@@ -110,14 +119,18 @@ struct HomeView: View {
         }
     }
     
-    func completeAct() {
+    private func completeAct() {
         withAnimation(.kindlySpring) {
+            kindnessService.completeAct(reflection: userReflection.isEmpty ? nil : userReflection)
             showingCompletionAnimation = true
-            kindnessService.completeAct()
+            userReflection = ""
             
-            // Update streak tracker
+            // Update streak tracker with completed dates
             streakTracker.updateCompletedDates(from: kindnessService.getCompletedActs())
-            streakTracker.updateLongestStreak(currentStreak: kindnessService.getCurrentStreak())
+            
+            // Calculate current streak and update longest if needed
+            let currentStreak = calculateCurrentStreak()
+            streakTracker.updateLongestStreak(currentStreak: currentStreak)
         }
         
         // Hide animation after delay
@@ -126,6 +139,32 @@ struct HomeView: View {
                 showingCompletionAnimation = false
             }
         }
+    }
+    
+    private func calculateCurrentStreak() -> Int {
+        let completedActs = kindnessService.getCompletedActs()
+        
+        // Get today's date and initialize variables
+        let calendar = Calendar.current
+        let today = calendar.startOfDay(for: Date())
+        var currentStreak = 0
+        var currentDate = today
+        
+        // Loop backwards from today, checking each day
+        while true {
+            let dayCompleted = completedActs.contains { act in
+                calendar.isDate(act.date, inSameDayAs: currentDate)
+            }
+            
+            if dayCompleted {
+                currentStreak += 1
+                currentDate = calendar.date(byAdding: .day, value: -1, to: currentDate)!
+            } else {
+                break
+            }
+        }
+        
+        return currentStreak
     }
 }
 
@@ -222,6 +261,76 @@ struct LottieHeartView: View {
                     scale = 1.2
                 }
             }
+        }
+    }
+}
+
+// Add this new view for reflection input
+struct ReflectionSheetView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @Binding var reflection: String
+    var onSave: () -> Void
+    
+    var body: some View {
+        NavigationView {
+            ZStack {
+                KindlyColors.subtleGradient.edgesIgnoringSafeArea(.all)
+                
+                VStack(spacing: 25) {
+                    Text("Add Your Reflection")
+                        .font(.system(size: 24, weight: .bold))
+                        .foregroundColor(Color(hex: "333333"))
+                    
+                    Text("How did this act of kindness make you feel? (Optional)")
+                        .font(.system(size: 16))
+                        .foregroundColor(Color(hex: "666666"))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                    
+                    ZStack(alignment: .topLeading) {
+                        TextEditor(text: $reflection)
+                            .padding(10)
+                            .background(KindlyColors.warmWhite)
+                            .cornerRadius(12)
+                            .frame(height: 150)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(KindlyColors.subtlePink, lineWidth: 1)
+                            )
+                        
+                        if reflection.isEmpty {
+                            Text("Share your thoughts...")
+                                .foregroundColor(Color(hex: "AAAAAA"))
+                                .padding(.leading, 15)
+                                .padding(.top, 18)
+                        }
+                    }
+                    .padding(.horizontal)
+                    
+                    Spacer()
+                    
+                    VStack(spacing: 15) {
+                        Button(action: {
+                            onSave()
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Text("Complete Act of Kindness")
+                                .kindlyButtonStyle()
+                        }
+                        
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Text("Skip")
+                                .kindlyOutlinedButtonStyle(textColor: Color(hex: "888888"))
+                        }
+                    }
+                    .padding(.horizontal, 30)
+                    .padding(.bottom, 30)
+                }
+                .padding(.top, 30)
+            }
+            .navigationBarHidden(true)
         }
     }
 }

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 0
+    @EnvironmentObject var summaryManager: SummaryManager
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -43,4 +44,5 @@ struct ContentView: View {
         .environmentObject(KindnessService())
         .environmentObject(StreakTracker())
         .environmentObject(NotificationManager())
+        .environmentObject(SummaryManager(kindnessService: KindnessService(), streakTracker: StreakTracker()))
 } 

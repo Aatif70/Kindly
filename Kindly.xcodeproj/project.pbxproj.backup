@@ -9,8 +9,6 @@
 /* Begin PBXFileReference section */
 		1860C7E92DBFE43500F8B0E9 /* Kindly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kindly.xcodeproj; sourceTree = "<group>"; };
 		18C95B3E2DC053DF0087DAB3 /* Kindly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kindly.xcodeproj; sourceTree = "<group>"; };
-		18C95B902DC058E00087DAB3 /* Kindly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kindly.xcodeproj; sourceTree = "<group>"; };
-		18EBE2E52DC059CC00D04AE9 /* Kindly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kindly.xcodeproj; sourceTree = "<group>"; };
 		18FBEE322DBFCB150057891C /* Kindly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kindly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FBEE662DBFD0D50057891C /* Kindly.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kindly.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,20 +40,6 @@
 			sourceTree = "<group>";
 		};
 		18C95B412DC053DF0087DAB3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		18C95B932DC058E00087DAB3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		18EBE2E82DC059CC00D04AE9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -149,14 +133,6 @@
 				{
 					ProductGroup = 1860C7EC2DBFE43500F8B0E9 /* Products */;
 					ProjectRef = 1860C7E92DBFE43500F8B0E9 /* Kindly.xcodeproj */;
-				},
-				{
-					ProductGroup = 18C95B932DC058E00087DAB3 /* Products */;
-					ProjectRef = 18C95B902DC058E00087DAB3 /* Kindly.xcodeproj */;
-				},
-				{
-					ProductGroup = 18EBE2E82DC059CC00D04AE9 /* Products */;
-					ProjectRef = 18EBE2E52DC059CC00D04AE9 /* Kindly.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -313,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "/Users/aatif/Documents/Projects/Swift projects/Kindly/Kindly/KindlyWidget/KindlyWidget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FU9LN4UMVZ;
@@ -342,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "/Users/aatif/Documents/Projects/Swift projects/Kindly/Kindly/KindlyWidget/KindlyWidget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FU9LN4UMVZ;

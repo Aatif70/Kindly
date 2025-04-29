@@ -106,7 +106,7 @@ class KindnessService: ObservableObject {
     }
     
     // Mark today's act as completed
-    func completeAct() {
+    func completeAct(reflection: String? = nil) {
         guard let act = todaysAct else { return }
         
         let today = calendar.startOfDay(for: Date())
